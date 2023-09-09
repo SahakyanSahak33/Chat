@@ -1,12 +1,16 @@
 package sahak.sahakyan.chat.chat;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class ChatMessage {
+
+    private MessageType type;
     private String content;
     private String sender;
-    private MessageType messageType;
+
 }
